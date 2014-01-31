@@ -3,6 +3,8 @@ $(function(){
 	$('#choose-nickname').submit(function(e){
 		e.preventDefault();
 		var nick = $('#nickname').val();
-		socket.emit('nickname', nick);
+		socket.emit('nickname', nick, function(err){
+			
+		});
 	});
 });
