@@ -11,4 +11,7 @@ $(function(){
 			$('#nick-error').html(err);
 		});
 	});
+
+	socket.on('new nicknames', function(data){
+	});
 });
