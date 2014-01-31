@@ -1,6 +1,6 @@
 var http = require('http'), 
 	express = require('express'),
-	socketio = require('socket.io');
+	chatServer = require('./lib/chat-server.js');
 
 var app = express();
 http.createServer(app).listen('3000', '127.0.0.1');
