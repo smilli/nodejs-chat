@@ -13,5 +13,10 @@ $(function(){
 	});
 
 	socket.on('new nicknames', function(data){
+		var text = '';
+		for (var i = 0; i < data.length; i++){
+			text += '<span class="user">' + data[i] + '</span>';
+		}
+		$('#users').html(text);
 	});
 });
